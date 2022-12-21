@@ -52,6 +52,7 @@ body {
     font-family: 'Overpass', sans-serif;
     background-color: var(--veryDarkBlue);
     color: var(--lightGray);
+
 }
 
 h3 {
@@ -60,17 +61,24 @@ h3 {
 
 main {
     display: flex;
-   justify-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .main-container {
-  
     background-color: var(--darkBlue);
-    width: 25%;
+    width: 35%;
+    height: 60%;
+    border-radius: 10px;
+    padding: 30px;
 }
 
-
-
+#svgStar {
+    width: 10px;
+    height: 10px;
+    
+}
 .attribution { 
     font-size: 11px; 
     text-align: center;
@@ -80,3 +88,7 @@ main {
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
+
+footer {
+    margin-top: auto;
+}
