@@ -6,12 +6,13 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="./app.js"></script>
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
   <main>
     <div class="main-container">
-
+      
       <div id="starDiv">
         <img id="svgStar" src="./images/icon-star.svg" alt="start icon">
       </div>
@@ -40,10 +41,13 @@
       </div>
   </div>
   <div class="thankYouContainer">
-    Rating state end
-    Thank you state start
+    <div id="ratingImage">
+      <img src="./images/illustration-thank-you.svg" alt="rating image"> 
+    </div>
 
-    You selected  out of 5
+    <div id="selectedRatingDiv">
+      <p id="selectedText">You selected  out of 5</p>
+  </div>
     Thank you!
     We appreciate you taking the time to give a rating. If you ever need more support, 
     dont hesitate to get in touch!
