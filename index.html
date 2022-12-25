@@ -11,7 +11,7 @@
 </head>
 <body>
   <main>
-    <div class="main-container">
+    <div class="main-container hidden">
       
       <div id="starDiv">
         <img id="svgStar" src="./images/icon-star.svg" alt="start icon">
@@ -29,26 +29,26 @@
       </div>
 
       <div id="numberRatings">
-        <button class="rating">1</button>
-        <button class="rating">2</button>
-        <button class="rating">3</button>
-        <button class="rating">4</button>
-        <button class="rating">5</button>
+        <button class="rating 1">1</button>
+        <button class="rating 2">2</button>
+        <button class="rating 3">3</button>
+        <button class="rating 4">4</button>
+        <button class="rating 5">5</button>
       </div>
 
       <div id="submitContainer">
         <button id="submitButton">Submit</button>
       </div>
   </div>
-  <div class="thankYouContainer">
+  <div class="thankYouContainer hidden">
     <div id="ratingImage">
       <img src="./images/illustration-thank-you.svg" alt="rating image"> 
     </div>
 
     <div id="selectedRatingDiv">
-      <p id="selectedText">You selected  out of 5</p>
+      <p id="selectedText">You selected <span id="ratingNum">3</span> out of 5</p>
   </div>
-    Thank you!
+    <h1 id="ty">Thank you!</h1>
     We appreciate you taking the time to give a rating. If you ever need more support, 
     dont hesitate to get in touch!
     Thank you state end

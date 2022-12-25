@@ -50,7 +50,7 @@ main {
     justify-content: space-around;
     background-color: var(--darkBlue);
     width: 29%;
-    height: 55%;
+    height: 52.5%;
     border-radius: 35px;
     padding: 25px 20px 25px 25px;
 }
@@ -99,11 +99,11 @@ main {
 }
 
 .rating:hover {
-    background-color: var(--mediumGray);
+    background-color: var(--primary);
     color: var(--white);
 }
 .rating:active {
-    background-color: var(--primary);
+    background-color: var(--mediumGray);
 }
 
 #submitContainer {
@@ -136,6 +136,15 @@ main {
     display: none;
 }
 
+#ty {
+    text-align: center;
+}
+#selectedText {
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: var(--mediumGray);
+
+}
 
 footer {
     min-height: 100%;
@@ -149,3 +158,5 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
+
+ 
