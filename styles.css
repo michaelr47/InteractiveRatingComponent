@@ -50,7 +50,7 @@ main {
     justify-content: space-around;
     background-color: var(--darkBlue);
     width: 29%;
-    height: 52.5%;
+    height: 53%;
     border-radius: 35px;
     padding: 25px 20px 25px 25px;
 }
@@ -138,12 +138,21 @@ main {
 
 #ty {
     text-align: center;
+    padding: -10px 0px;
+   color: var(--white);
 }
+
+
 #selectedText {
     padding: 5px 15px;
+    font-size: 16px;
     border-radius: 15px;
     background-color: var(--mediumGray);
+    color: var(--primary);
+}
 
+#appreciateText {
+    line-height: 25px;
 }
 
 footer {

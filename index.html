@@ -1,64 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="./app.js"></script>
-  <title>Frontend Mentor | Interactive rating component</title>
-</head>
-<body>
-  <main>
-    <div class="main-container hidden">
-      
-      <div id="starDiv">
-        <img id="svgStar" src="./images/icon-star.svg" alt="start icon">
-      </div>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="./app.js"></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div id="starDiv">
+          <img id="svgStar" src="./images/icon-star.svg" alt="start icon" />
+        </div>
 
-      <div id="headingQuestion">
-        <h1>How did we do?</h1>
+        <div id="headingQuestion">
+          <h1>How did we do?</h1>
+        </div>
+
+        <div id="paragraphText">
+          <p class="description-text">
+            Please let us know how we did with your support<br />
+            request. All feedback is appreciated to help us <br />improve our
+            offering!
+          </p>
+        </div>
+
+        <div id="numberRatings">
+          <button class="rating 1">1</button>
+          <button class="rating 2">2</button>
+          <button class="rating 3">3</button>
+          <button class="rating 4">4</button>
+          <button class="rating 5">5</button>
+        </div>
+
+        <div id="submitContainer">
+          <button id="submitButton">Submit</button>
+        </div>
       </div>
-      
-      <div id="paragraphText">
-        <p class="description-text">
-        Please let us know how we did with your support<br> request. All feedback is appreciated 
-        to help us <br>improve our offering!
+      <div class="thankYouContainer">
+        <div id="ratingImage">
+          <img src="./images/illustration-thank-you.svg" alt="rating image" />
+        </div>
+
+        <div id="selectedRatingDiv">
+          <sub
+            ><p id="selectedText">
+              You selected <span id="ratingNum">3</span> out of 5
+            </p></sub
+          >
+        </div>
+        <h1 id="ty">Thank you!</h1>
+        <p id="appreciateText" style="text-align: center">
+          We appreciate you taking the time to give a rating.<br />If you ever
+          need more support, dont hesitate to <br />get in touch!
         </p>
       </div>
-
-      <div id="numberRatings">
-        <button class="rating 1">1</button>
-        <button class="rating 2">2</button>
-        <button class="rating 3">3</button>
-        <button class="rating 4">4</button>
-        <button class="rating 5">5</button>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Michael Reyes</a>
       </div>
-
-      <div id="submitContainer">
-        <button id="submitButton">Submit</button>
-      </div>
-  </div>
-  <div class="thankYouContainer hidden">
-    <div id="ratingImage">
-      <img src="./images/illustration-thank-you.svg" alt="rating image"> 
-    </div>
-
-    <div id="selectedRatingDiv">
-      <p id="selectedText">You selected <span id="ratingNum">3</span> out of 5</p>
-  </div>
-    <h1 id="ty">Thank you!</h1>
-    We appreciate you taking the time to give a rating. If you ever need more support, 
-    dont hesitate to get in touch!
-    Thank you state end
-  </div>
-</main>
-<footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Michael Reyes</a>
-  </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>
