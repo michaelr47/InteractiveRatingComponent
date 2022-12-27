@@ -16,7 +16,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 
 ### The challenge
-
 Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
