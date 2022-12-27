@@ -29,7 +29,7 @@ Users should be able to:
 ![](./images/IRC-hover%26activeState.png);
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://michaelr47.github.io/InteractiveRatingComponent/)
 
 ### Built with
 
