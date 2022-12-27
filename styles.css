@@ -14,6 +14,7 @@ The designs were created to the following widths:
     --darkBlue: hsl(213, 19%, 18%);
     --veryDarkBlue:  hsl(216, 12%, 8%);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -170,7 +171,6 @@ footer {
 
 
  @media only screen and (max-width: 1200px){ 
-    
      .main-container {
         width: 35%;
        
@@ -180,7 +180,6 @@ footer {
 @media only screen and (max-width: 950px) {
 
     .main-container {
-       
         width: 40%;
     }
 
@@ -191,18 +190,22 @@ footer {
         margin: 0px 10px;
     }
 
+   
+
 }
+
  @media only screen and (max-width: 750px){
-	
+
     .main-container {
-      
         width: 60%;
         padding: 30px 20px 25px 25px;
     }
+
     #numberRatings {
         margin-right: 10px;
-
     }
+
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -210,4 +213,5 @@ footer {
         max-width: 100%;
         width: 75%;
     }
+    
 }
