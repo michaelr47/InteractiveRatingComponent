@@ -1,26 +1,39 @@
-const ratingBtns = document.getElementsByClassName('rating');
+const ratingBtns = document.querySelectorAll('.rating');
 const numberRatingSpan = document.getElementById('ratingNum');
 const submitBtn = document.getElementById('submitButton');
 
 
-for (const button of ratingBtns) {
+ratingBtns.forEach(btn => {
     
-    button.addEventListener('click', () => {
-        button.style.backgroundColor = '#7c8798';
-        button.style.color = 'white';
-        numberRatingSpan.innerText = button.innerText;
-        
-    });
-   
-};
+    btn.addEventListener('click', () => {
 
-
-submitBtn.addEventListener('click', () => {
-
-    document.getElementsByClassName('main-container')[0].style.display = 'none';
-    document.getElementsByClassName('thankYouContainer')[0].classList.remove('hidden');
-
+        btn.style.backgroundColor = 'hsl(25, 97%, 53%)';
+        btn.style.color = 'white';
+        numberRatingSpan.innerText = btn.innerText;
+    })
 })
+ 
+   
+
+
+
+let click = false;
+ratingBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (submitBtn.clicked === true) {
+          return;
+        } 
+        else {
+            submitBtn.addEventListener('click', () => {
+                click = true;
+                document.getElementsByClassName('main-container')[0].style.display = 'none';
+                document.getElementsByClassName('thankYouContainer')[0].classList.remove('hidden');
+                
+            });
+        }     
+    }) 
+})
+
 
 
 
